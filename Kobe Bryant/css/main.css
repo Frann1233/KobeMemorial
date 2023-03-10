@@ -1,0 +1,746 @@
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main {
+  color: #333;
+  background-color: #ffbc00;
+}
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4;
+  font-size: 1.5rem;
+}
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #ffbc00;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.background-image {
+  background-image: url(/Images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image .container header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image .container header .main-nav {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image .container header .main-nav ul {
+  width: 1130px;
+  border-top: #fdb927 solid 6px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image .container header .main-nav ul li {
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.background-image .container header .main-nav ul li img {
+  padding-top: 2rem;
+}
+
+.background-image .container header .main-nav ul li a {
+  font-family: "Bakbak One";
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.background-image .container header .main-nav ul li a:hover {
+  color: #552582;
+}
+
+.background-image .container .main-image {
+  background-image: url(/Images/main-image2.jpg);
+  width: 1130px;
+  height: 522px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image .container .main-image .text-container {
+  position: relative;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-image .container .main-image .text-container h1 {
+  color: white;
+  font-family: "Bakbak One";
+  font-size: 3rem;
+  line-height: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.background-image .container .main-image .text-container h5 {
+  display: none;
+}
+
+.background-image .container .main-image .text-container h6 {
+  display: none;
+}
+
+.background-image .container .main-image .text-container p {
+  color: #fdb927;
+  font-family: "Bakbak One";
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.background-image .container .main-image .text-container .mamba {
+  color: white;
+  font-family: "Bakbak One";
+  font-size: 2rem;
+}
+
+.background-image-stats {
+  background-image: url(/Images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-stats .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-stats .container .bg {
+  background-color: black;
+  color: #fdb927;
+  font-family: "Bakbak One";
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-image-stats .container .bg h1 {
+  font-weight: 100;
+}
+
+.background-image-stats .container .stats-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-stats .container .stats-header .main-nav-stats {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-stats .container .stats-header .main-nav-stats ul {
+  width: 1130px;
+  border-top: #fdb927 solid 6px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-stats .container .stats-header .main-nav-stats ul li {
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.background-image-stats .container .stats-header .main-nav-stats ul li img {
+  padding-top: 2rem;
+}
+
+.background-image-stats .container .stats-header .main-nav-stats ul li a {
+  font-family: "Bakbak One";
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.background-image-stats .container .stats-header .main-nav-stats ul li a:hover {
+  color: #552582;
+}
+
+.background-image-stats .container .main-image-stats {
+  background: black;
+  width: 1130px;
+  height: 422px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-stats .container .main-image-stats .kobe-stats h1 {
+  color: #552582;
+  z-index: 999;
+  display: flex;
+}
+
+.background-image-stats .container .main-image-stats .stats-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-stats .container .main-image-stats .stats-container h1 {
+  color: white;
+  font-family: "Bakbak One";
+  font-size: 3rem;
+  line-height: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.background-image-stats .container .main-image-stats .stats-container p {
+  color: #fdb927;
+  font-family: "Bakbak One";
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.background-image-stats .container .main-image-stats .stats-container .mamba {
+  color: white;
+  font-family: "Bakbak One";
+  font-size: 2rem;
+}
+
+.small-widget-box {
+  padding: 5px;
+  width: 860px;
+  height: 400px;
+  resize: both;
+  overflow: auto;
+  border: 6px solid #fdb927;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(11, minmax(75px, auto));
+  grid-template-rows: repeat(21, minmax(auto, 75px));
+  overflow: auto;
+  color: white;
+  font-family: "Bakbak One";
+  font-size: 1.2rem;
+  max-height: 100%;
+  max-width: 100%;
+  scroll-snap-type: y;
+  scroll-padding: 75px;
+}
+
+.table-grid .body {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  background-color: #4b4b4b;
+}
+
+.table-grid div {
+  border: 1px solid white;
+  z-index: 0;
+}
+
+.table-grid div.fixedToTop {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  z-index: 10;
+}
+
+.table-grid div.fixedToLeft {
+  /* Uncomment these if you want to freeze the first column */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  z-index: 10;
+}
+
+.table-grid div.fixedToBoth {
+  /* Uncomment this if you want to freeze the first row or column */
+  position: sticky;
+  /* Uncomment these if you want to freeze the first column */
+  /* left: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  top: 0;
+  z-index: 20;
+}
+
+.table-grid .header {
+  background-color: black;
+}
+
+.table-grid .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow .slideshow-item {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  animation: cycle-images 50s infinite;
+}
+
+.slideshow .slideshow-item .slideshow-item-text {
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fdb927;
+  padding: 5rem 5rem;
+}
+
+.slideshow .slideshow-item .slideshow-item-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow .slideshow-item .slideshow-item-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow .slideshow-item .slideshow-item-text p {
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow .slideshow-item .slideshow-item-text a {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.slideshow .slideshow-item .slideshow-item-text .button-align {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.slideshow .slideshow-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoom 20s infinite;
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img {
+  animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img {
+  animation-delay: 5s;
+}
+
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img {
+  animation-delay: 10s;
+}
+
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img {
+  animation-delay: 15s;
+}
+
+.slideshow-item:nth-child(5),
+.slideshow-item:nth-child(5) img {
+  animation-delay: 20s;
+}
+
+.slideshow-item:nth-child(6),
+.slideshow-item:nth-child(6) img {
+  animation-delay: 25s;
+}
+
+.slideshow-item:nth-child(7),
+.slideshow-item:nth-child(7) img {
+  animation-delay: 30s;
+}
+
+.slideshow-item:nth-child(8),
+.slideshow-item:nth-child(8) img {
+  animation-delay: 35s;
+}
+
+.slideshow-item:nth-child(9),
+.slideshow-item:nth-child(9) img {
+  animation-delay: 40s;
+}
+
+.slideshow-item:nth-child(10),
+.slideshow-item:nth-child(10) img {
+  animation-delay: 45s;
+}
+
+.slideshow-item:nth-child(11),
+.slideshow-item:nth-child(11) img {
+  animation-delay: 50s;
+}
+
+@keyframes cycle-images {
+  5% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoom {
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-image {
+    max-width: 80vw;
+    max-height: 60vh;
+  }
+  ul {
+    max-width: 80vw;
+  }
+  .text-container {
+    left: 20% !important;
+  }
+  .text-container p {
+    display: none !important;
+  }
+  .text-container h5 {
+    color: #fdb927;
+    font-family: "Bakbak One";
+    font-size: 1rem;
+    display: block !important;
+  }
+  .text-container h6 {
+    display: none !important;
+  }
+  .text-container .mamba {
+    font-size: 2rem !important;
+  }
+  .main-image-stats {
+    width: 100vw !important;
+    height: 40vh !important;
+  }
+  .small-widget-box {
+    width: 30vw !important;
+    height: 60vw !important;
+  }
+  .kobe-stats h1 {
+    font-size: 2rem !important;
+  }
+  .main-nav-stats ul {
+    width: 100vw !important;
+    height: 12vh !important;
+  }
+  .main-nav-stats a {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-image {
+    max-width: 100vw;
+    max-height: 60vh;
+  }
+  ul {
+    max-width: 100vw;
+  }
+  .text-container {
+    left: 5% !important;
+  }
+  .text-container p {
+    display: none !important;
+  }
+  .text-container h5 {
+    display: none !important;
+  }
+  .text-container h6 {
+    color: #fdb927;
+    font-family: "Bakbak One";
+    font-size: 1rem !important;
+    display: block !important;
+  }
+  .text-container .mamba {
+    font-size: 2rem !important;
+  }
+  .slideshow-item-text {
+    max-width: 100% !important;
+    padding: 2rem 2rem !important;
+    top: initial !important;
+    transition: initial !important;
+    bottom: 0% !important;
+    margin-bottom: 0% !important;
+    transform: translateY(0%) !important;
+  }
+  h1 {
+    font-size: 3rem !important;
+  }
+  h2 {
+    font-size: 2rem !important;
+  }
+  p {
+    font-size: 1.2rem !important;
+  }
+  .main-image-stats {
+    width: 100vw !important;
+    height: 50vh !important;
+  }
+  .small-widget-box {
+    width: 87vw !important;
+    height: 60vw !important;
+  }
+  .kobe-stats h1 {
+    font-size: 2rem !important;
+  }
+  .main-nav-stats ul {
+    width: 100vw !important;
+    height: 12vh !important;
+  }
+  .main-nav-stats a {
+    font-size: 3rem !important;
+  }
+  .main-nav-stats li {
+    padding: 0 !important;
+  }
+  .main-nav-stats img {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 470px) {
+  .main-image {
+    max-width: 100vw;
+    max-height: 70vh;
+  }
+  ul {
+    max-width: 100vw;
+  }
+  .main-nav img {
+    width: 90%;
+  }
+  .main-nav li {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .main-nav a {
+    font-size: 2rem !important;
+  }
+  .text-container {
+    left: 5% !important;
+  }
+  .text-container p {
+    display: none !important;
+  }
+  .text-container h5 {
+    display: none !important;
+  }
+  .text-container h6 {
+    color: #fdb927;
+    font-family: "Bakbak One";
+    font-size: 1rem;
+    display: block !important;
+  }
+  .text-container .mamba {
+    font-size: 2rem !important;
+  }
+  .main-image-stats {
+    width: 100vw !important;
+    height: 50vh !important;
+  }
+  .small-widget-box {
+    width: 90vw !important;
+    height: 80vw !important;
+  }
+  .kobe-stats h1 {
+    font-size: 2rem !important;
+  }
+  .main-nav-stats ul {
+    width: 100vw !important;
+    height: 12vh !important;
+  }
+  .main-nav-stats a {
+    font-size: 2rem !important;
+  }
+  .main-nav-stats li {
+    padding: 0 !important;
+  }
+  .main-nav-stats img {
+    transform: scale(0.7);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-image {
+    max-width: 100vw;
+    max-height: 60vh;
+  }
+  ul {
+    max-width: 100vw;
+  }
+  .text-container {
+    left: 22% !important;
+  }
+  .text-container p {
+    display: none !important;
+  }
+  .text-container h5 {
+    display: none !important;
+  }
+  .text-container h6 {
+    color: #fdb927;
+    font-family: "Bakbak One";
+    font-size: 1.5rem !important;
+    display: block !important;
+  }
+  .text-container .mamba {
+    font-size: 2rem !important;
+  }
+  .main-image-stats {
+    width: 100vw !important;
+    height: 50vh !important;
+  }
+  .small-widget-box {
+    width: 85vw !important;
+    height: 60vw !important;
+  }
+  .kobe-stats h1 {
+    font-size: 3rem !important;
+  }
+  .main-nav-stats ul {
+    width: 100vw !important;
+    height: 12vh !important;
+  }
+  .main-nav-stats a {
+    font-size: 3rem !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .main-image-stats {
+    width: 100vw !important;
+    height: 50vh !important;
+  }
+  .small-widget-box {
+    width: 90vw !important;
+    height: 28vw !important;
+  }
+  .kobe-stats h1 {
+    font-size: 3rem !important;
+  }
+  .main-nav-stats ul {
+    width: 100vw !important;
+    height: 12vh !important;
+  }
+  .main-nav-stats a {
+    font-size: 3rem !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */

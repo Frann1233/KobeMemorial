@@ -1,0 +1,505 @@
+@import "variables";
+@import "buttons";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  background-color: $black-color;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+li{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Index
+.background-image {
+  background-image: url(/Images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .main-nav{
+        background-color: $black-color;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        ul{
+          width: 1130px;
+          border-top: $lakers-orange-color solid 6px;
+
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+
+          li{
+            padding: 0rem 1rem 0rem 1rem;
+
+            img{
+              padding-top: 2rem;
+            }
+            a{
+              font-family: $main-font;
+              color: $white-color;
+              font-size: 3rem;
+              letter-spacing: 0.1rem;
+
+              &:hover{
+                color: $lakers-purple-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-image{
+      background-image: url(/Images/main-image2.jpg) ;
+      width: 1130px;
+      height: 522px;
+    
+    
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      
+      .text-container{
+        position: relative;
+        left: 15%;
+
+        display: flex;
+        flex-direction: column;
+        h1{
+          color: $white-color;
+          font-family: $main-font;
+          font-size: 3rem;
+          line-height: 2.5rem;
+          padding-bottom: 1rem;
+        }
+
+        h5{
+          display: none;
+        }
+
+        h6{
+          display: none;
+        }
+
+        p{
+          color: $lakers-orange-color;
+          font-family: $main-font;
+          font-size: 1.2rem;
+          padding-bottom: 1rem;
+        }
+
+        .mamba{
+          color: $white-color;
+          font-family: $main-font;
+          font-size: 2rem;
+        }
+      }
+    }
+    
+  }
+}
+
+// Stats
+.background-image-stats {
+  background-image: url(/Images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .bg{
+      background-color: $black-color;
+      color: $lakers-orange-color;
+      font-family: $main-font;
+      font-size: 1.5rem;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-weight: 100;
+      }
+    }
+    .stats-header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .main-nav-stats{
+        background-color: $black-color;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        ul{
+          width: 1130px;
+          border-top: $lakers-orange-color solid 6px;
+
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+
+          li{
+            padding: 0rem 1rem 0rem 1rem;
+
+            img{
+              padding-top: 2rem;
+            }
+            a{
+              font-family: $main-font;
+              color: $white-color;
+              font-size: 3rem;
+              letter-spacing: 0.1rem;
+
+              &:hover{
+                color: $lakers-purple-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-image-stats{
+      background: $black-color;
+      width: 1130px;
+      height: 422px;
+      padding-bottom: 1rem;
+    
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .kobe-stats{
+
+        h1{
+          color: $lakers-purple-color;
+          z-index: 999;
+          display: flex;
+        }
+      }
+      
+      .stats-container{
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+          color: $white-color;
+          font-family: $main-font;
+          font-size: 3rem;
+          line-height: 2.5rem;
+          padding-bottom: 1rem;
+        }
+
+        p{
+          color: $lakers-orange-color;
+          font-family: $main-font;
+          font-size: 1.2rem;
+          padding-bottom: 1rem;
+        }
+
+        .mamba{
+          color: $white-color;
+          font-family: $main-font;
+          font-size: 2rem;
+        }
+      }
+    }
+    
+  }
+}
+
+.small-widget-box {
+  padding: 5px;
+  width: 860px;
+  height: 400px;
+  resize: both;
+  overflow: auto;
+
+  border: 6px solid $lakers-orange-color;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(11, minmax(75px, auto));
+  grid-template-rows: repeat(21, minmax(auto, 75px));
+  overflow: auto;
+  color: $white-color;
+  font-family: $main-font;
+  font-size: 1.2rem;
+
+  max-height: 100%;
+  max-width: 100%;
+
+  scroll-snap-type: y ;
+  scroll-padding: 75px;
+
+  .body {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    background-color: rgb(75, 75, 75);
+  }
+}
+
+.table-grid div {
+  border: 1px solid $white-color;
+  z-index: 0;
+}
+
+.table-grid div.fixedToTop {
+  //  Uncomment these if you want to freeze the first row
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #333;
+
+  z-index: 10;
+}
+
+.table-grid div.fixedToLeft {
+  /* Uncomment these if you want to freeze the first column */
+  // position: sticky;
+  // left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #333;
+
+  z-index: 10;
+}
+
+.table-grid div.fixedToBoth {
+  /* Uncomment this if you want to freeze the first row or column */
+  position: sticky;
+
+  /* Uncomment these if you want to freeze the first column */
+  /* left: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #333;
+  
+
+  top: 0;
+  z-index: 20;
+}
+
+.table-grid .header {
+  background-color: $black-color;
+}
+
+.table-grid {
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Career
+.slideshow {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .slideshow-item {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    animation: cycle-images 50s infinite;
+
+    .slideshow-item-text {
+      max-width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: $lakers-orange-color;
+      padding: 5rem 5rem;
+
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      p {
+        color: $white-color;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+
+        z-index: 1;
+        padding-top: 1rem;
+        font-size: 2rem;
+        color: $white-color;
+      }
+
+      .button-align {
+        display: flex;
+        justify-content: center;
+
+        padding-top: 2rem;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: zoom 20s infinite;
+    }
+  }
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img {
+  animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img {
+  animation-delay: 5s;
+}
+
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img {
+  animation-delay: 10s;
+}
+
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img {
+  animation-delay: 15s;
+}
+
+.slideshow-item:nth-child(5),
+.slideshow-item:nth-child(5) img {
+  animation-delay: 20s;
+}
+
+.slideshow-item:nth-child(6),
+.slideshow-item:nth-child(6) img {
+  animation-delay: 25s;
+}
+
+.slideshow-item:nth-child(7),
+.slideshow-item:nth-child(7) img {
+  animation-delay: 30s;
+}
+
+.slideshow-item:nth-child(8),
+.slideshow-item:nth-child(8) img {
+  animation-delay: 35s;
+}
+
+.slideshow-item:nth-child(9),
+.slideshow-item:nth-child(9) img {
+  animation-delay: 40s;
+}
+
+.slideshow-item:nth-child(10),
+.slideshow-item:nth-child(10) img {
+  animation-delay: 45s;
+}
+
+.slideshow-item:nth-child(11),
+.slideshow-item:nth-child(11) img {
+  animation-delay: 50s;
+}
+
+@keyframes cycle-images {
+  5% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoom {
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+@import "media";
